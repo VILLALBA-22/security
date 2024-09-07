@@ -4,4 +4,6 @@ app = FastAPI(debug=True)
 
 @app.get("/")
 async def test(): 
-  return {}
+  return {
+    "cash": "Of course sr!"
+  }
