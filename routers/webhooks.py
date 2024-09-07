@@ -8,12 +8,11 @@ router = APIRouter(
 @router.post("/repository")
 async def webhook(request: Request):
   body_json = {}
-  
+
   try: 
     body_json = await request.json()
   except:
     print("An exception occurred")
-  
 
   print(body_json)
   
